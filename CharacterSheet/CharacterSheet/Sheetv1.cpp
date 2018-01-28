@@ -3,42 +3,43 @@ V0.1
 Chris Higgins*/
 #include <iostream>
 #include <string>
+#include <fstream>
 
 using namespace std;
 
-int main()
-{
+int main(){
 	//Base Stuff
-	string CharName;
-	cout << "Input Character Name: ";
-	cin >> CharName;
-	cout << "Character Name is " << CharName;
-	cout << endl;
+	
+		string CharName;
+		cout << "Input Character Name: ";
+		cin >> CharName;
+		cout << "Character Name is " << CharName;
+		cout << endl;
 		
-	int Level;
-	cout << "Input Character Level: ";
-	cin >> Level;
-	cout << "Character Level is " << Level;
-	cout << endl;
+		int Level;
+		cout << "Input Character Level: ";
+		cin >> Level;
+		cout << "Character Level is " << Level;
+		cout << endl;
 
-	string Class;
-	cout << "Input Character Class: ";
-	cin >> Class;
-	cout << "Character is a " << Class;
-	cout << endl;
+		string Class;
+		cout << "Input Character Class: ";
+		cin >> Class;
+		cout << "Character is a " << Class;
+		cout << endl;
 
-	string Race;
-	cout << "Input Character Race: ";
-	cin >> Race;
-	cout << "Character is a " << Race;
-	cout << endl;
+		string Race;
+		cout << "Input Character Race: ";
+		cin >> Race;
+		cout << "Character is a " << Race;
+		cout << endl;
 
-	string Alignment;
-	cout << "Input Character Alignment: ";
-	cin >> Alignment;
-	cout << "Character is " << Alignment;
-	cout << endl;
-
+		string Alignment;
+		cout << "Input Character Alignment: ";
+		cin >> Alignment;
+		cout << "Character is " << Alignment;
+		cout << endl;
+	
 	//Stats
 	int Strength;
 	cout << "Input Character Strength: ";
@@ -81,7 +82,20 @@ int main()
 	cin >> ProfiencyBonus;
 	cout << "Profiency Bonus is " << ProfiencyBonus;
 	cout << endl;
-		
+	
+
+	//Input Results
+	cout << "Character name is " << CharName << endl;
+	cout << "Level: " << Level << " " << Alignment << " " << Race << " " << Class << endl;
+	cout << "Profiency Bonus: " << ProfiencyBonus << endl;
+	cout << "Strength: " << Strength << endl;
+	cout << "Dexterity: " << Dexterity << endl;
+	cout << "Consitution: " << Constitution << endl;
+	cout << "Intelligence: " << Intelligence << endl;
+	cout << "Wisdom: " << Wisdom << endl;
+	cout << "Charisma: " << Charisma << endl;
+
+
 	return 0;
 
 
