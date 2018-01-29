@@ -2,14 +2,21 @@
 V0.1
 Chris Higgins*/
 #include <iostream>
+#include <cstring>
 #include <string>
 #include <fstream>
+#include <random>
 
 using namespace std;
 
 int main(){
-	//Base Stuff	
-		{string CharName;
+	//Random Number Seed
+	random_device rd;  //obtain a random number from hardware
+	mt19937 eng(rd()); //seed the generator
+	uniform_int_distribution<> distr(3, 18); // define the range
+
+	//Base Stuff
+		string CharName;
 		cout << "Input Character Name: ";
 		cin >> CharName;
 		cout << "Character Name is " << CharName;
@@ -38,10 +45,15 @@ int main(){
 		cin >> Alignment;
 		cout << "Character is " << Alignment;
 		cout << endl;
-		}
+
+
 	//Stats
-		{int Strength;
+
+		int Strength;
 		cout << "Input Character Strength: ";
+		for(int Strength=0; Strength<40; ++Strength)
+				cout << distr(eng) << ' '; //generate numbers
+
 		cin >> Strength;
 		cout << "Strength is " << Strength;
 		cout << endl;
@@ -81,9 +93,9 @@ int main(){
 		cin >> ProfiencyBonus;
 		cout << "Profiency Bonus is " << ProfiencyBonus;
 		cout << endl;
-		}
+
 	//Skills
-		{int Acrobatics;
+		int Acrobatics;
 		int AnimalHandling;
 		int Arcana;
 		int Deception;
@@ -100,10 +112,10 @@ int main(){
 		int SleightOfHand;
 		int Stealth;
 		int Survival;
-		}
+
 
 	//Input Results
-		{cout << "Character name is " << CharName << endl;
+		cout << "Character name is " << CharName << endl;
 		cout << "Level: " << Level << " " << Alignment << " " << Race << " " << Class << endl;
 		cout << "Profiency Bonus: " << ProfiencyBonus << endl;
 		cout << "Strength: " << Strength << endl;
@@ -112,7 +124,7 @@ int main(){
 		cout << "Intelligence: " << Intelligence << endl;
 		cout << "Wisdom: " << Wisdom << endl;
 		cout << "Charisma: " << Charisma << endl;
-		}
+
 
 	return 0;
 
