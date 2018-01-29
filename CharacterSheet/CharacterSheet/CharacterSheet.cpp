@@ -50,41 +50,44 @@ int main(){
 	//Stats
 
 		int Strength;
-		cout << "Input Character Strength: ";
-		for(int Strength=0; Strength<40; ++Strength)
+		cout << "Character Strength: ";
+		for(int Strength=0; Strength<1; ++Strength)
 				cout << distr(eng) << ' '; //generate numbers
-
-		cin >> Strength;
 		cout << "Strength is " << Strength;
 		cout << endl;
 
 		int Dexterity;
-		cout << "Input Character Dexterity: ";
-		cin >> Dexterity;
+		cout << "Character Dexterity: ";
+		for(int Dexterity=0; Dexterity<1; ++Dexterity)
+				cout << distr(eng) << ' ';
 		cout << "Dexterity is " << Dexterity;
 		cout << endl;
 
 		int Constitution;
-		cout << "Input Character Constitution: ";
-		cin >> Constitution;
+		cout << "Character Constitution: ";
+		for(int Constitution=0; Constitution<1; ++Constitution)
+				cout << distr(eng) << ' ';
 		cout << "Constitution is " << Constitution;
 		cout << endl;
 
 		int Intelligence;
-		cout << "Input Character Intelligence: ";
-		cin >> Intelligence;
+		cout << "Character Intelligence: ";
+		for(int Intelligence=0; Intelligence<1; ++Intelligence)
+			cout << distr(eng) << ' ';
 		cout << "Intelligence is " << Intelligence;
 		cout << endl;
 
 		int Wisdom;
-		cout << "Input Character Wisdom: ";
-		cin >> Wisdom;
+		cout << "Character Wisdom: ";
+		for(int Wisdom=0; Wisdom<1; ++Wisdom)
+			cout << distr(eng) << ' ';
 		cout << "Wisdom is " << Wisdom;
 		cout << endl;
 
 		int Charisma;
-		cout << "Input Character Charisma: ";
-		cin >> Charisma;
+		cout << "Character Charisma: ";
+		for(int Charisma=0; Charisma<1; ++Charisma)
+			cout << distr(eng) << ' ';
 		cout << "Charisma is " << Charisma;
 		cout << endl;
 
@@ -95,7 +98,7 @@ int main(){
 		cout << endl;
 
 	//Skills
-		int Acrobatics;
+		/*int Acrobatics;
 		int AnimalHandling;
 		int Arcana;
 		int Deception;
@@ -111,7 +114,7 @@ int main(){
 		int Religion;
 		int SleightOfHand;
 		int Stealth;
-		int Survival;
+		int Survival;*/
 
 
 	//Input Results
@@ -120,7 +123,7 @@ int main(){
 		cout << "Profiency Bonus: " << ProfiencyBonus << endl;
 		cout << "Strength: " << Strength << endl;
 		cout << "Dexterity: " << Dexterity << endl;
-		cout << "Consitution: " << Constitution << endl;
+		cout << "Constitution: " << Constitution << endl;
 		cout << "Intelligence: " << Intelligence << endl;
 		cout << "Wisdom: " << Wisdom << endl;
 		cout << "Charisma: " << Charisma << endl;
